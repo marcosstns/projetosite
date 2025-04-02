@@ -115,18 +115,18 @@ body{
     
 }
 
-.botao {
+/* .botao {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 500%;
     border: none;
-    background-color: brown;
+    background-color: white;
     padding: 10px 15px;  
     color: white;  
     cursor: pointer;  
-    display: block;  
+    display: block;  s
     margin: 20px auto;  
     width: 400px; 
     height: 200px; 
     border-radius: 30px; 
-}
+} */
