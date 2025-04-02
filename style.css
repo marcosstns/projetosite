@@ -115,7 +115,7 @@ body{
     
 }
 
-/* .botao {
+.botao {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 500%;
@@ -124,9 +124,9 @@ body{
     padding: 10px 15px;  
     color: white;  
     cursor: pointer;  
-    display: block;  s
+    display: block;  
     margin: 20px auto;  
     width: 400px; 
     height: 200px; 
     border-radius: 30px; 
-} */
+}
