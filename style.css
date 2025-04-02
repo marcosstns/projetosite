@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     background-color: brown;
+    
 }
 body{
     flex-direction: column;
@@ -83,8 +84,17 @@ body{
     top: 22;
     left: 650;
 }
+ button:hover {
+    background-color: red;
+
+}
 .carrin{
-    
+   position: absolute; 
+   top: 8;
+   left: 2000;
+   height: 88px;
+   cursor: pointer;
+
 }
 
 
