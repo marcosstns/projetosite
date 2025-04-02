@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 1900px;
     background-color: brown;
     
 }
@@ -32,11 +32,11 @@ body{
 
 .texto-sup {
     padding: 10px 110px;
-    background-color: brown;
     color: wheat;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     flex-grow: 1;
+    width: 50%;
     
 }
 .login{
@@ -94,7 +94,7 @@ body{
 .carrin{
    position: absolute; 
    top: 8;
-   left: 2013;
+   left: 1800;
    height: 88px;
    cursor: pointer;
 
