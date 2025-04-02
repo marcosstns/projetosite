@@ -1,0 +1,129 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: brown;
+}
+body{
+    flex-direction: column;
+    align-items: center;  
+}
+.flexa {
+    display: block;    
+    margin: 0 auto;   
+    width: 200px;     
+    height: auto;     
+}
+.burguer {
+    display: block;    
+    margin: 0 auto;   
+    width: 200px;     
+    height: auto;     
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.texto-sup {
+    padding: 10px 110px;
+    background-color: brown;
+    color: wheat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    flex-grow: 1;
+    
+}
+.login{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    background-color: #FF7F50;
+    width: 100px;
+    height: 60px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    top: 22;
+    left: 350;
+}
+.cardapio{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    background-color: #FF7F50;
+    width: 100px;
+    height: 60px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    top: 22;
+    left: 500;
+}
+.ajuda{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    background-color: #FF7F50;
+    width: 100px;
+    height: 60px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    top: 22;
+    left: 650;
+}
+
+
+
+.fim{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 150%;
+    background-color: 	FF7F50;
+    margin: 10px auto;
+    width: 15%;
+    height: 7,5%;
+    border-radius: 25px;
+ 
+}
+
+.titulo{
+    text-align: center;
+    padding: 20px 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 200%;
+    background-color: E9967A;
+    margin: 10px auto;
+    border-radius: 50px;
+    width: 20%;
+    
+}
+
+.botao {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 500%;
+    border: none;
+    background-color: brown;
+    padding: 10px 15px;  
+    color: white;  
+    cursor: pointer;  
+    display: block;  
+    margin: 20px auto;  
+    width: 400px; 
+    height: 200px; 
+    border-radius: 30px; 
+}
