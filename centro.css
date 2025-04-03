@@ -1,4 +1,6 @@
-
+.cabecalho2{
+    background-color: white;
+}
 .imagens-centro{
     display: flex;
     position: absolute;
@@ -7,6 +9,6 @@
 }
 .b1{
     width: 1920px;
-    height: 600px;
+    height: 1800px;
     opacity: 0.8;
 }
