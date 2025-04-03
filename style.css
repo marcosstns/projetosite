@@ -10,18 +10,7 @@ body{
     flex-direction: column;
     align-items: center;  
 }
-/* .flexa {
-    display: block;    
-    margin: 0 auto;   
-    width: 200px;     
-    height: auto;     
-}
-.burguer {
-    display: block;    
-    margin: 0 auto;   
-    width: 200px;     
-    height: auto;     
-} */
+
 
 .logo{
     width: 100px;
@@ -54,7 +43,7 @@ body{
     top: 22;
     left: 350;
 }
-/* .cardapio{
+.cardapio{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
     background-color: #FF7F50;
@@ -68,7 +57,7 @@ body{
     position: absolute;
     top: 22;
     left: 500;
-} */
+}
 .ajuda{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
