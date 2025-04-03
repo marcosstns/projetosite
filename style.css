@@ -34,7 +34,6 @@ body{
     margin: 0;
     flex-grow: 1;
     width: 50%;
-    
 }
 .login{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -95,8 +94,7 @@ body{
     text-align: center;
     justify-content: center;
     text-decoration: none;
-    align-items: center;
-    
+    align-items: center; 
 }
 .sobre{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
