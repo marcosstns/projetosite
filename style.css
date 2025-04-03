@@ -12,8 +12,7 @@ html, body {
     width: 1890px;
     background-color: brown;
     position: fixed;
-    z-index: 2;
-    
+    z-index: 2;   
 }
 body{
     flex-direction: column;
