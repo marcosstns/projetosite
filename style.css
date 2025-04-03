@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1900px;
+    width: 1890px;
     background-color: brown;
     
 }
@@ -98,7 +98,7 @@ body{
    position: absolute; 
    background-color: gray;
    top: 8;
-   left: 1820;
+   left: 1810;
    height: 88px;
    cursor: pointer;
    display: flex;
