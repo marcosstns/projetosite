@@ -13,6 +13,7 @@
             width: 1890px;
             background-color: brown;
             position: fixed;
+            top: 0;
             z-index: 2;
         }
         .logo{
@@ -33,6 +34,26 @@
             width: 50%;
             
         }
+        .card{
+            position: absolute;
+            font-size: 50px;
+            left: 50%;
+            color: white;
+            border-bottom: 2px solid white;
+            transform: translate(-50%);
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        
+
+        .card:hover{
+            color: blanchedalmond;
+        }
+        .fundcard{
+            width: 1900px;
+            height: 2000px;
+            opacity: 1.0;
+        }
     </style>
     
     <body>
@@ -42,8 +63,10 @@
             </div>
 
             <a href="/index.html"><img src="/imagens/logosite.png" alt="logo" class="logo"></a>
-
-            
+            <h1 class="card">CARDAPIO</h1> 
+        </div>
+        <div class="centro2">
+            <img src="/imagens/fundocardapio.jpg" class="fundcard">
         </div>
 
     </body>
