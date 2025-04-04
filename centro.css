@@ -17,13 +17,13 @@
 .textos{
     opacity: 1.0;
 }
-.promo{
+.lancamento{
     position: absolute;
     color: orange;
     font-size: 30px;
     top: 1410;
     left: 500;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .melhor{
     position: absolute;
