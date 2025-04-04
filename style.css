@@ -11,7 +11,8 @@ html, body {
     align-items: center;
     width: 1900px;
     background-color: brown;
-    position: fixed;   
+    position: fixed;  
+    z-index: 999; 
 }
 body{
     flex-direction: column;
