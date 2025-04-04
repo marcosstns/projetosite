@@ -1,8 +1,26 @@
 .clientes{
-    background-color: white;
-    color: white;
+    background-color: FFFFE0;
+    color: 	FFFFE0;
     position: absolute;
     top: 2500;
     width: 1900px;
     height: 500px;
+}
+.endereco{
+    position: absolute;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    top: 150;
+    left: 50%;
+    transform: translate(-50%);
+}
+.tituloINF{
+    position: absolute;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
