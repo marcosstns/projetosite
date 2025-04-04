@@ -10,17 +10,46 @@
     position: absolute;
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 35px;
+    font-size: 45px;
     top: 150;
     left: 50%;
     transform: translate(-50%);
 }
-.tituloINF{
+.tituloINF1{
     position: absolute;
-    color: black;
+    color: brown;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 60px;
+    font-size: 70px;
     top: 0;
     left: 50%;
     transform: translate(-50%);
+}
+.tituloINF2{
+    position: absolute;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    top: 0;
+    left: 150; 
+}
+.tituloINF3{
+    position: absolute;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    top: 0;
+    left: 1450; 
+}
+.zap{
+    position: absolute;
+    width: 350px;
+   
+    top: 50;
+    left: 60;
+}
+.insta{
+    position: absolute;
+    width: 340px;
+    top: 60;
+    left: 720;
 }
