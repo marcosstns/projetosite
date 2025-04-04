@@ -49,12 +49,12 @@
     border: 4px solid white;
 } 
 
-.final{
+.ingredientes{
     background-color: wheat;
     color: wheat;
     position: absolute;
     width: 1900px;
-    height: 700px;
+    height: 600px;
     top: 1900px;
 
 }
