@@ -6,15 +6,21 @@
     </head>
 
     <style>
+        html, body {
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       height: 100%;
+  }
         .cabecalho {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 1890px;
+            width: 1900px;
             background-color: brown;
             position: fixed;
             top: 0;
-            z-index: 2;
+            z-index: 3;
         }
         .logo{
             width: 100px;
@@ -27,7 +33,7 @@
         }
         .texto-sup {
             padding: 10px 110px;
-            color: wheat;
+            color: white;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin: 0;
             flex-grow: 1;
@@ -52,8 +58,67 @@
         .fundcard{
             width: 1900px;
             height: 2000px;
-            opacity: 1.0;
+            
         }
+        .backk{
+            background-color: black;
+            position: absolute;
+            top: 0;
+            width: 1900px;
+            height: 1980;
+            opacity: 0.7;
+        }
+        .text1{
+            position: absolute;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 60px;
+            top: 230;
+            left: 360;
+
+        }
+        .textp1{
+            position: absolute;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 80px;
+            top: 150;
+            left: 360;
+            
+        }
+        .lancheroxo{
+            position: absolute;
+            top: 250;
+            left: 1150;
+            width: 300px;
+            height: 300px;
+            border-radius: 30px;
+            border: 4px solid white;
+            z-index: 2;
+        }
+        .descc1{
+            position: absolute;
+            color: white;
+            font-size: 17px;
+            top: 460;
+            left: 280;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+        }
+        .valores{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+        .valor1{
+            position: absolute;
+            top: 370;
+            left: 950;
+        }
+        
     </style>
     
     <body>
@@ -67,6 +132,19 @@
         </div>
         <div class="centro2">
             <img src="/imagens/fundocardapio.jpg" class="fundcard">
+            <img src="/imagens/lancheroxa.jpg" class="lancheroxo">
+            <h1 class="backk">.</h1>
+            <div class="text1">Impacto</div>
+            <div class="textp1"><h1>FINAL</h1></div>
+        </div>
+         <div class="descricaocard">
+            <h3 class="descc1"> Para o golpe de sabor! Duas carnes suculentas grelhadas no ponto certo<p></p> acompanhadas de cebolas roxas caramelizadas que adicionam um toque adocicado.<p></p> Um lanche poderoso, feito pra quem quer encerrar a fome com força total.<p></p> É sabor na última potência!
+
+            </h3>
+            
+        </div>
+        <div class="valores">
+            <h3 class="valor1"> R$27,90</h3>
         </div>
 
     </body>
