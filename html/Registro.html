@@ -13,7 +13,7 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            background-color: brown;
+            background-color: rgb(165, 42, 42);
             position: fixed;
             z-index: 2;
         }
@@ -40,14 +40,15 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
-            background-color: brown;
+            transform: translate(90%, -45%);
             padding: 15px;
             border-radius: 15px;
             width: 20%;
+            z-index: 10;
+            border: none;
         }
         fieldset{
-            border: 3px solid wheat;
+            border: none;
         }
         legend{
             border: 1px solid wheat;
@@ -106,6 +107,46 @@
         #submit:hover{
             background-color: rgb(248, 213, 147);
         }
+
+        
+        .Registro{
+            
+            position: absolute;
+            top: 425;
+            left: 370;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+           
+        }
+        .fundojb{
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            position:absolute;
+            left: 0;
+       
+            
+        }
+        .backlogin{
+            background-color: black;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            opacity: 0.9;
+        }
+
+        .texto_registro{
+            top: 12%;
+            left: 71%;
+            font-size: 40px;
+            color: white;
+            position: absolute;
+            z-index: 5;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -116,11 +157,15 @@
             <h2>JUCY BURGUER</h2>
         </div>
     </div>
+
+    <img src="/imagens/fundojb.jpg" class="fundojb">
+    <div class="backlogin">
+        <h1>.</h1>
+    </div>
+    <h1 class="texto_registro">Cadastre-se</h1>
     <div class="box">
         <form action="">
             <fieldset>
-                <legend class="form"><b>Fórmulário de Clientes</b></legend>
-                <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
                     <label for="nome" class="labelInput">Nome completo</label>
@@ -129,6 +174,11 @@
                 <div class="inputBox">
                     <input type="text" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <label for="senha" class="labelInput">Senha</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
@@ -148,16 +198,6 @@
                 <label for="data_nascimento"><b>Data de Nascimento:</b></label>
                 <input type="date" name="data_nascimento" id="data_nascimento" required>
                 <br><br><br>
-                <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser" required>
-                    <label for="estado" class="labelInput">Estado</label>
-                </div>
-                <br><br>
                 <div class="inputBox">
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
                     <label for="endereco" class="labelInput">Endereço</label>
