@@ -5,12 +5,12 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0)5%, black 70%);
     position: absolute;
     top: 1000;
-    width: 1900px;
+    width: 100%;
     height: 900px;
 }
 
 .fundo{
-    width: 1900px;
+    width: 100%;
     height: 2000px;
     opacity: 1.0;
 }
@@ -63,7 +63,7 @@
     background-color: wheat;
     color: wheat;
     position: absolute;
-    width: 1900px;
+    width: 100%;
     height: 600px;
     top: 1900px;
 
