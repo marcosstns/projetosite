@@ -46,6 +46,7 @@
             width: 20%;
             z-index: 10;
             border: none;
+            background-color: rgba(165, 42, 42, 0.8);
         }
         fieldset{
             border: none;
@@ -80,6 +81,7 @@
             pointer-events: none;
             transition: .5s;
         }
+
         .inputUser:focus ~ .labelInput,
         .inputUser:valid ~ .labelInput{
             top: -20px;
@@ -98,7 +100,7 @@
             width: 100%;
             border: none;
             padding: 15px;
-            color: brown;
+            color: rgb(165, 42, 42);
             font-size: 15px;
             cursor: pointer;
             border-radius: 10px;
@@ -140,13 +142,51 @@
 
         .texto_registro{
             top: 12%;
-            left: 71%;
+            left: 74%;
             font-size: 40px;
-            color: white;
+            color: wheat;
             position: absolute;
             z-index: 5;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
+        .bemvindo{
+            color: white;
+            font-size: 40px;
+            z-index: 5;
+        }
+        .bem{
+            font-size: 100px;
+            color: orangered;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            z-index: 5;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .vindo{
+            font-size: 100px;
+            color: white;
+            position: absolute;
+            border-bottom: 5px solid white;
+            top: 20%;
+            left: 10%;
+            z-index: 5;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .descvindo{
+            font-size: 25px;
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            z-index: 5;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
     </style>
 </head>
 <body>
@@ -162,6 +202,12 @@
     <div class="backlogin">
         <h1>.</h1>
     </div>
+    <div class="bemvindo">
+        <h1 class="bem">Bem Vindo</h1>
+        <h1 class="vindo">ao Nosso Site!</h1>
+        <h3 class="descvindo">Aqui é o lugar onde a sua fome encontra a solução perfeita:<p></p> lanches enormes, saborosos e feitos com ingredientes de qualidade.<p></p> Cada mordida é uma explosão de sabor que vai te conquistar!<p></p> Navegue pelo nosso site e descubra o seu novo lanche favorito<p></p>  porque aqui a missão é matar sua fome com estilo e muito sabor!</h3>
+    </div>
+
     <h1 class="texto_registro">Cadastre-se</h1>
     <div class="box">
         <form action="">
