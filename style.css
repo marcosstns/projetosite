@@ -9,7 +9,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1900px;
+    width: 100%;
     background-color: A52A2A;
     position: fixed;  
     z-index: 999; 
