@@ -363,10 +363,11 @@
         <div class="centro2">
             <img src="/imagens/fundocardapio.jpg" class="fundcard">
             <img src="/imagens/lancheimpacto.jpg" class="lancheroxo" onclick="adicionarAoCarrinho('Impacto Final', 24.90, '/imagens/lancheimpacto.jpg')">
-                <img src="/imagens/explosaoatomica.jpg" class="atomica" onclick="adicionarAoCarrinho('Explosão Atomica', 34.90)">
-                <img src="/imagens/cheeseburguer.jpg" class="cheese" onclick="adicionarAoCarrinho('Tsunami Cheese', 29.90)">
-                <img src="/imagens/frangoburguer.jpg" class="frango" onclick="adicionarAoCarrinho('Fome do Monstro', 39.90)">
-                <img src="/imagens/pentaburguer.jpg" class="penta" onclick="adicionarAoCarrinho('Penta Blaster', 45.90)">
+            <img src="/imagens/explosaoatomica.jpg" class="atomica" onclick="adicionarAoCarrinho('Explosão Atômica', 34.90, '/imagens/explosaoatomica.jpg')">
+            <img src="/imagens/cheeseburguer.jpg" class="cheese" onclick="adicionarAoCarrinho('Tsunami Cheese', 29.90, '/imagens/cheeseburguer.jpg')">
+            <img src="/imagens/frangoburguer.jpg" class="frango" onclick="adicionarAoCarrinho('Fome do Monstro', 39.90, '/imagens/frangoburguer.jpg')">
+            <img src="/imagens/pentaburguer.jpg" class="penta" onclick="adicionarAoCarrinho('Penta Blaster', 45.90, '/imagens/pentaburguer.jpg')">
+            
             <h1 class="backk">.</h1>
             <div class="text1">Impacto</div>
             <div class="textp1"><h1>FINAL</h1></div>
@@ -410,20 +411,64 @@
         </div>
 
         <script>
-            function adicionarAoCarrinho(nome, preco) {
+            function adicionarAoCarrinho(nome, preco, imagem) {
                 let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
         
-                // Verifica se já existe esse item no carrinho
                 let itemExistente = carrinho.find(item => item.nome === nome);
         
                 if (itemExistente) {
                     itemExistente.quantidade += 1;
                 } else {
-                    carrinho.push({ nome, preco, quantidade: 1 });
+                    carrinho.push({ nome, preco, quantidade: 1, imagem });
                 }
         
                 localStorage.setItem('carrinho', JSON.stringify(carrinho));
+                atualizarCarrinhoVisual();
+        
+                // Efeito visual no carrinho
+                let carrinhoVisual = document.getElementById('carrinho-visual');
+                if (carrinhoVisual) {
+                    carrinhoVisual.classList.add('carrinho-destaque');
+                    setTimeout(() => {
+                        carrinhoVisual.classList.remove('carrinho-destaque');
+                    }, 600);
+                }
             }
+        
+            function atualizarCarrinhoVisual() {
+                let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+                let container = document.getElementById('itens-carrinho');
+                let total = 0;
+        
+                if (!container) return;
+        
+                container.innerHTML = "";
+        
+                carrinho.forEach(item => {
+                    let subtotal = item.preco * item.quantidade;
+                    total += subtotal;
+        
+                    container.innerHTML += `
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <img src="${item.imagem}" style="width: 50px; height: 50px; border-radius: 5px; margin-right: 10px;">
+                            <div>
+                                <strong>${item.nome}</strong><br>
+                                ${item.quantidade}x R$${item.preco.toFixed(2)}<br>
+                                <small>Subtotal: R$${subtotal.toFixed(2)}</small>
+                            </div>
+                        </div>
+                        <hr>
+                    `;
+                });
+        
+                const totalDiv = document.getElementById('total-carrinho');
+                if (totalDiv) {
+                    totalDiv.innerText = `Total: R$${total.toFixed(2)}`;
+                }
+            }
+        
+            // Atualiza carrinho ao abrir a página
+            atualizarCarrinhoVisual();
         </script>
         
 
