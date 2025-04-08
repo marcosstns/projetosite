@@ -175,21 +175,30 @@
 }
 .botaofim{
     position: absolute;
+    cursor: pointer;
+    background-color: orange;
     top: 750;
     width: 100px;
     height: 30px;
     left: 62%;
     transform: translate(-50%);
     border-radius: 5px;
+    font-weight: bold;
 }
+.botaofim:hover{
+    background-color: FF8C00;
+    transition: background 0.5s ease  
+
+}
+
 .cartoes{
     position: absolute;
-    top: 105%;
+    top: 100%;
     left: 34%;
 }
 .whats{
     position: absolute;
-    top: 1030;
+    top: 100%;
     left: 10;
     width: 100px;
     z-index: 1000;
