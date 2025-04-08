@@ -343,21 +343,11 @@
         </div>
         <div class="centro2">
             <img src="/imagens/fundocardapio.jpg" class="fundcard">
-            <a href="carrinho.html" onclick="adicionarAoCarrinho(event, 'Impacto Final', 24.90)">
-                <img src="/imagens/lancheimpacto.jpg" class="lancheroxo">
-            </a>
-            <a href="carrinho.html" onclick="adicionarAoCarrinho(event, 'Impacto Final', 24.90)">
-            <img src="/imagens/explosaoatomica.jpg" class="atomica">
-            </a>
-            <a href="carrinho.html" onclick="adicionarAoCarrinho(event, 'Impacto Final', 24.90)">
-                <img src="/imagens/cheeseburguer.jpg" class="cheese">
-            </a>
-            <a href="carrinho.html" onclick="adicionarAoCarrinho(event, 'Impacto Final', 24.90)">
-                <img src="/imagens/frangoburguer.jpg" class="frango">
-            </a>
-            <a href="carrinho.html" onclick="adicionarAoCarrinho(event, 'Impacto Final', 24.90)">
-                <img src="/imagens/pentaburguer.jpg" class="penta">
-            </a>
+            <img src="/imagens/lancheimpacto.jpg" class="lancheroxo" onclick="adicionarAoCarrinho('Impacto Final', 24.90)">
+                <img src="/imagens/explosaoatomica.jpg" class="atomica" onclick="adicionarAoCarrinho('Explosão Atomica', 34.90)">
+                <img src="/imagens/cheeseburguer.jpg" class="cheese" onclick="adicionarAoCarrinho('Tsunami Cheese', 29.90)">
+                <img src="/imagens/frangoburguer.jpg" class="frango" onclick="adicionarAoCarrinho('Fome do Monstro', 39.90)">
+                <img src="/imagens/pentaburguer.jpg" class="penta" onclick="adicionarAoCarrinho('Penta Blaster', 45.90)">
             <h1 class="backk">.</h1>
             <div class="text1">Impacto</div>
             <div class="textp1"><h1>FINAL</h1></div>
@@ -399,6 +389,24 @@
             <h3 class="valor4"> R$39,90</h3>
             <h3 class="valor5"> R$45,90</h3>
         </div>
+
+        <script>
+            function adicionarAoCarrinho(nome, preco) {
+                let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        
+                // Verifica se já existe esse item no carrinho
+                let itemExistente = carrinho.find(item => item.nome === nome);
+        
+                if (itemExistente) {
+                    itemExistente.quantidade += 1;
+                } else {
+                    carrinho.push({ nome, preco, quantidade: 1 });
+                }
+        
+                localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            }
+        </script>
+        
 
     </body>
 </html>
