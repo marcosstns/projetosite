@@ -22,6 +22,22 @@
             top: 0;
             z-index: 3;
         }
+        .carrin{
+            position: absolute; 
+            top: 0;
+            left: 1800;
+            height: 87px;
+            cursor: pointer;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            align-items: center;
+
+        }
+        .carrin:hover{
+            opacity: 0.7;
+        }
         .logo{
             width: 100px;
             position: absolute;
@@ -336,6 +352,9 @@
         <div class="cabecalho">
             <div class="texto-sup">
                 <h2>JUCY BURGUER</h2>
+                <a href="/html/carrinho.html" class="carrin">
+                    <img src="/imagens/carrinho.png" alt="carrinho" width="100">
+                </a>
             </div>
 
             <a href="/index.html"><img src="/imagens/logosite.png" alt="logo" class="logo"></a>
@@ -343,7 +362,7 @@
         </div>
         <div class="centro2">
             <img src="/imagens/fundocardapio.jpg" class="fundcard">
-            <img src="/imagens/lancheimpacto.jpg" class="lancheroxo" onclick="adicionarAoCarrinho('Impacto Final', 24.90)">
+            <img src="/imagens/lancheimpacto.jpg" class="lancheroxo" onclick="adicionarAoCarrinho('Impacto Final', 24.90, '/imagens/lancheimpacto.jpg')">
                 <img src="/imagens/explosaoatomica.jpg" class="atomica" onclick="adicionarAoCarrinho('Explosão Atomica', 34.90)">
                 <img src="/imagens/cheeseburguer.jpg" class="cheese" onclick="adicionarAoCarrinho('Tsunami Cheese', 29.90)">
                 <img src="/imagens/frangoburguer.jpg" class="frango" onclick="adicionarAoCarrinho('Fome do Monstro', 39.90)">
